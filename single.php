@@ -12,6 +12,7 @@
 				<section class="blog_content">
 					<?php the_content(); ?>
 				</section>
+				<?php comments_template( '', true ); ?>
 			</article>
 		<?php endwhile; // end of the loop. ?>
 	</div>

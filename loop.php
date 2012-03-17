@@ -62,6 +62,7 @@
 											<?php wp_link_pages( array( 'before' => '' . __( 'Pages:', 'twentyten' ), 'after' => '' ) ); ?>
 										<?php endif; ?>
 									</section>
+									<p><?php comments_popup_link( __( 'Leave a comment', 'twentyten' ), __( '1 Comment', 'twentyten' ), __( '% Comments', 'twentyten' ) ); ?></p>
 							</article>
 			<?php comments_template( '', true ); ?>
 		<?php endif; // This was the if statement that broke the loop into three parts based on categories. ?>

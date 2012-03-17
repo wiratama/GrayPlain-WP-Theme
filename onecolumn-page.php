@@ -21,4 +21,20 @@ get_header(); ?>
 			<?php endwhile; ?>
 		</div>
 	</div>
+	
+	<script type="text/javascript" >
+		jQuery('#about_nav').click(function() {
+			jQuery('#card_about').slideDown();
+			jQuery('#card_social').slideUp();
+			jQuery('#about_nav').css("color", "#41BAE4");
+			jQuery('#social_nav').css("color", "#333");
+		})
+		
+		jQuery('#social_nav').click(function() {
+			jQuery('#card_about').slideUp();
+			jQuery('#card_social').slideDown();
+			jQuery('#about_nav').css("color", "#333");
+			jQuery('#social_nav').css("color", "#41BAE4");
+		})
+	</script>
 <?php get_footer(); ?>
